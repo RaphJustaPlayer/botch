@@ -1,0 +1,1433 @@
+[19/11/2020 20:57] INFO: Lancement du bot
+[19/11/2020 20:57] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 85, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 660, in load_extension
+    spec = importlib.util.find_spec(name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\importlib\util.py", line 94, in find_spec
+    parent = __import__(parent_name, fromlist=['__path__'])
+ModuleNotFoundError: No module named 'plugins'
+[19/11/2020 20:59] INFO: Lancement du bot
+[19/11/2020 20:59] ERROR: 
+Failed to load extension admin
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 85, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 662, in load_extension
+    raise errors.ExtensionNotFound(name)
+discord.ext.commands.errors.ExtensionNotFound: Extension 'plugins.admin' could not be loaded.
+[19/11/2020 21:00] INFO: Lancement du bot
+[19/11/2020 21:00] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 85, in main
+    client.load_extension("plugins\\"+plugin+'.py')
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 660, in load_extension
+    spec = importlib.util.find_spec(name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\importlib\util.py", line 94, in find_spec
+    parent = __import__(parent_name, fromlist=['__path__'])
+ModuleNotFoundError: No module named 'plugins\\general'
+[19/11/2020 21:00] INFO: Lancement du bot
+[19/11/2020 21:00] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 85, in main
+    client.load_extension(plugin+'.py')
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 660, in load_extension
+    spec = importlib.util.find_spec(name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\importlib\util.py", line 94, in find_spec
+    parent = __import__(parent_name, fromlist=['__path__'])
+ModuleNotFoundError: No module named 'general'
+[19/11/2020 21:01] INFO: Lancement du bot
+[19/11/2020 21:01] ERROR: 
+Failed to load extension admin
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 85, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 662, in load_extension
+    raise errors.ExtensionNotFound(name)
+discord.ext.commands.errors.ExtensionNotFound: Extension 'plugins.admin' could not be loaded.
+[19/11/2020 21:02] INFO: Lancement du bot
+[19/11/2020 21:02] INFO: Lancement du bot
+[19/11/2020 21:02] INFO: Lancement du bot
+[19/11/2020 21:08] INFO: Lancement du bot
+[19/11/2020 21:13] INFO: Lancement du bot
+[19/11/2020 21:13] INFO: Lancement du bot
+[19/11/2020 21:24] INFO: Lancement du bot
+[19/11/2020 21:24] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\testbot\plugins\general.py", line 180, in setup
+    bot.add_cog(General(bot))
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 508, in add_cog
+    cog = cog._inject(self)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 389, in _inject
+    raise e
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 384, in _inject
+    bot.add_command(command)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 1131, in add_command
+    raise CommandRegistrationError(command.name)
+discord.ext.commands.errors.CommandRegistrationError: The command help is already an existing command or alias.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 79, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: CommandRegistrationError: The command help is already an existing command or alias.
+[19/11/2020 21:24] INFO: Lancement du bot
+[19/11/2020 21:25] INFO: Lancement du bot
+[19/11/2020 21:25] INFO: Lancement du bot
+[19/11/2020 21:27] INFO: Lancement du bot
+[22/11/2020 10:52] INFO: Lancement du bot
+[22/11/2020 12:49] INFO: Lancement du bot
+[22/11/2020 12:49] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\testbot\plugins\general.py", line 34, in <module>
+    class General(commands.Cog):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 115, in __new__
+    raise TypeError(no_bot_cog.format(base, elem))
+TypeError: Commands or listeners must not start with cog_ or bot_ (in method General.bot_stats)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: TypeError: Commands or listeners must not start with cog_ or bot_ (in method General.bot_stats)
+[22/11/2020 12:57] INFO: Lancement du bot
+[22/11/2020 12:57] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\testbot\plugins\general.py", line 34, in <module>
+    class General(commands.Cog):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 115, in __new__
+    raise TypeError(no_bot_cog.format(base, elem))
+TypeError: Commands or listeners must not start with cog_ or bot_ (in method General.bot_stats)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: TypeError: Commands or listeners must not start with cog_ or bot_ (in method General.bot_stats)
+[22/11/2020 12:58] INFO: Lancement du bot
+[22/11/2020 12:58] ERROR: 
+Failed to load extension JdSdlM
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\testbot\plugins\JdSdlM.py", line 11
+    self.main_channel = await bot.fetch_channel(707639957484732466)
+                        ^
+SyntaxError: 'await' outside async function
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.JdSdlM' raised an error: SyntaxError: 'await' outside async function (JdSdlM.py, line 11)
+[22/11/2020 12:59] INFO: Lancement du bot
+[22/11/2020 13:00] INFO: Lancement du bot
+[22/11/2020 13:00] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\testbot\plugins\general.py", line 34, in <module>
+    class General(commands.Cog):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 115, in __new__
+    raise TypeError(no_bot_cog.format(base, elem))
+TypeError: Commands or listeners must not start with cog_ or bot_ (in method General.bot_stats)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: TypeError: Commands or listeners must not start with cog_ or bot_ (in method General.bot_stats)
+[22/11/2020 13:00] INFO: Lancement du bot
+[22/11/2020 13:04] INFO: Lancement du bot
+[22/11/2020 13:04] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\testbot\plugins\general.py", line 34, in <module>
+    class General(commands.Cog):
+  File "D:\testbot\plugins\general.py", line 63, in General
+    def on_raw_reaction_add(self, payload):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 269, in decorator
+    raise TypeError('Listener function must be a coroutine function.')
+TypeError: Listener function must be a coroutine function.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: TypeError: Listener function must be a coroutine function.
+[22/11/2020 13:04] INFO: Lancement du bot
+[22/11/2020 13:05] INFO: Lancement du bot
+[23/11/2020 20:12] INFO: Lancement du bot
+[23/11/2020 20:12] INFO: Lancement du bot
+[23/11/2020 20:15] INFO: Lancement du bot
+[23/11/2020 20:16] INFO: Lancement du bot
+[23/11/2020 20:17] INFO: Lancement du bot
+[23/11/2020 21:45] INFO: Lancement du bot
+[23/11/2020 21:46] INFO: Lancement du bot
+[23/11/2020 21:46] INFO: Lancement du bot
+[25/11/2020 20:10] INFO: Lancement du bot
+[25/11/2020 20:11] INFO: Lancement du bot
+[25/11/2020 20:12] INFO: Lancement du bot
+[25/11/2020 20:14] INFO: Lancement du bot
+[25/11/2020 20:14] INFO: Lancement du bot
+[25/11/2020 20:16] INFO: Lancement du bot
+[25/11/2020 20:17] INFO: Lancement du bot
+[25/11/2020 20:17] INFO: Lancement du bot
+[25/11/2020 20:19] INFO: Lancement du bot
+[25/11/2020 20:21] INFO: Lancement du bot
+[25/11/2020 20:22] INFO: Lancement du bot
+[25/11/2020 20:23] INFO: Lancement du bot
+[25/11/2020 20:24] INFO: Lancement du bot
+[25/11/2020 20:25] INFO: Lancement du bot
+[25/11/2020 20:26] INFO: Lancement du bot
+[25/11/2020 20:28] INFO: Lancement du bot
+[25/11/2020 20:28] INFO: Lancement du bot
+[26/11/2020 11:04] INFO: Lancement du bot
+[26/11/2020 11:05] INFO: Lancement du bot
+[26/11/2020 11:05] INFO: Lancement du bot
+[26/11/2020 11:12] INFO: Lancement du bot
+[26/11/2020 11:16] INFO: Lancement du bot
+[26/11/2020 11:18] INFO: Lancement du bot
+[26/11/2020 11:18] INFO: Lancement du bot
+[26/11/2020 11:19] INFO: Lancement du bot
+[26/11/2020 11:22] INFO: Lancement du bot
+[26/11/2020 11:28] INFO: Lancement du bot
+[26/11/2020 12:08] INFO: Lancement du bot
+[26/11/2020 12:10] INFO: Lancement du bot
+[26/11/2020 12:31] INFO: Lancement du bot
+[26/11/2020 12:32] INFO: Lancement du bot
+[26/11/2020 12:39] INFO: Lancement du bot
+[26/11/2020 12:40] INFO: Lancement du bot
+[26/11/2020 12:41] INFO: Lancement du bot
+[26/11/2020 12:45] INFO: Lancement du bot
+[26/11/2020 12:45] ERROR: 
+Failed to load extension starBotch
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 662, in load_extension
+    raise errors.ExtensionNotFound(name)
+discord.ext.commands.errors.ExtensionNotFound: Extension 'plugins.starBotch' could not be loaded.
+[26/11/2020 12:45] INFO: Lancement du bot
+[26/11/2020 12:46] INFO: Lancement du bot
+[26/11/2020 12:46] INFO: Lancement du bot
+[27/11/2020 16:13] INFO: Lancement du bot
+[27/11/2020 16:13] ERROR: 
+Failed to load extension admin
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\testbot\plugins\admin.py", line 81, in setup
+    bot.add_cog(Admin(bot))
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 508, in add_cog
+    cog = cog._inject(self)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 389, in _inject
+    raise e
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 384, in _inject
+    bot.add_command(command)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 1131, in add_command
+    raise CommandRegistrationError(command.name)
+discord.ext.commands.errors.CommandRegistrationError: The command sinfo is already an existing command or alias.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.admin' raised an error: CommandRegistrationError: The command sinfo is already an existing command or alias.
+[27/11/2020 16:16] INFO: Lancement du bot
+[27/11/2020 16:16] ERROR: 
+Failed to load extension admin
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\testbot\plugins\admin.py", line 100, in setup
+    bot.add_cog(Admin(bot))
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 508, in add_cog
+    cog = cog._inject(self)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 389, in _inject
+    raise e
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 384, in _inject
+    bot.add_command(command)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 1131, in add_command
+    raise CommandRegistrationError(command.name)
+discord.ext.commands.errors.CommandRegistrationError: The command sinfo is already an existing command or alias.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.admin' raised an error: CommandRegistrationError: The command sinfo is already an existing command or alias.
+[27/11/2020 16:17] INFO: Lancement du bot
+[27/11/2020 16:17] ERROR: 
+Failed to load extension admin
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\testbot\plugins\admin.py", line 100, in setup
+    bot.add_cog(Admin(bot))
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 508, in add_cog
+    cog = cog._inject(self)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 389, in _inject
+    raise e
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 384, in _inject
+    bot.add_command(command)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 1131, in add_command
+    raise CommandRegistrationError(command.name)
+discord.ext.commands.errors.CommandRegistrationError: The command sinfo is already an existing command or alias.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.admin' raised an error: CommandRegistrationError: The command sinfo is already an existing command or alias.
+[27/11/2020 16:17] INFO: Lancement du bot
+[28/11/2020 22:11] INFO: Lancement du bot
+[28/11/2020 22:12] INFO: Lancement du bot
+[28/11/2020 22:30] INFO: Lancement du bot
+[28/11/2020 22:33] INFO: Lancement du bot
+[28/11/2020 22:33] INFO: Lancement du bot
+[28/11/2020 22:34] INFO: Lancement du bot
+[28/11/2020 22:36] INFO: Lancement du bot
+[29/11/2020 11:50] INFO: Lancement du bot
+[29/11/2020 11:50] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\testbot\plugins\general.py", line 190, in setup
+    bot.add_cog(General(bot))
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 508, in add_cog
+    cog = cog._inject(self)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 389, in _inject
+    raise e
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 384, in _inject
+    bot.add_command(command)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 1131, in add_command
+    raise CommandRegistrationError(command.name)
+discord.ext.commands.errors.CommandRegistrationError: The command help is already an existing command or alias.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: CommandRegistrationError: The command help is already an existing command or alias.
+[29/11/2020 11:51] INFO: Lancement du bot
+[29/11/2020 11:51] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\testbot\plugins\general.py", line 191, in setup
+    bot.add_cog(General(bot))
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 508, in add_cog
+    cog = cog._inject(self)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 389, in _inject
+    raise e
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 384, in _inject
+    bot.add_command(command)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 1131, in add_command
+    raise CommandRegistrationError(command.name)
+discord.ext.commands.errors.CommandRegistrationError: The command help is already an existing command or alias.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: CommandRegistrationError: The command help is already an existing command or alias.
+[29/11/2020 11:51] INFO: Lancement du bot
+[29/11/2020 11:52] INFO: Lancement du bot
+[29/11/2020 11:52] INFO: Lancement du bot
+[29/11/2020 11:53] INFO: Lancement du bot
+[29/11/2020 11:54] INFO: Lancement du bot
+[29/11/2020 11:56] INFO: Lancement du bot
+[29/11/2020 12:10] INFO: Lancement du bot
+[29/11/2020 12:13] INFO: Lancement du bot
+[29/11/2020 12:43] INFO: Lancement du bot
+[29/11/2020 12:43] INFO: Lancement du bot
+[29/11/2020 12:44] INFO: Lancement du bot
+[29/11/2020 12:46] INFO: Lancement du bot
+[29/11/2020 13:00] INFO: Lancement du bot
+[29/11/2020 13:01] INFO: Lancement du bot
+[29/11/2020 13:19] INFO: Lancement du bot
+[29/11/2020 13:19] INFO: Lancement du bot
+[29/11/2020 16:45] INFO: Lancement du bot
+[29/11/2020 16:45] ERROR: 
+Failed to load extension sdlm
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\testbot\plugins\sdlm.py", line 66
+    def setup(bot):
+                  ^
+IndentationError: unexpected unindent
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 79, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: IndentationError: unexpected unindent (sdlm.py, line 66)
+[29/11/2020 16:45] INFO: Lancement du bot
+[29/11/2020 16:47] INFO: Lancement du bot
+[29/11/2020 16:49] INFO: Lancement du bot
+[29/11/2020 16:52] INFO: Lancement du bot
+[29/11/2020 17:06] INFO: Lancement du bot
+[29/11/2020 17:11] INFO: Lancement du bot
+[29/11/2020 17:11] INFO: Lancement du bot
+[29/11/2020 17:28] INFO: Lancement du bot
+[29/11/2020 17:33] INFO: Lancement du bot
+[29/11/2020 17:54] INFO: Lancement du bot
+[29/11/2020 18:16] INFO: Lancement du bot
+[29/11/2020 18:17] INFO: Lancement du bot
+[29/11/2020 18:23] INFO: Lancement du bot
+[29/11/2020 18:44] INFO: Lancement du bot
+[29/11/2020 18:47] INFO: Lancement du bot
+[29/11/2020 18:50] INFO: Lancement du bot
+[29/11/2020 18:56] INFO: Lancement du bot
+[29/11/2020 19:07] INFO: Lancement du bot
+[29/11/2020 19:08] INFO: Lancement du bot
+[29/11/2020 19:12] INFO: Lancement du bot
+[29/11/2020 20:53] INFO: Lancement du bot
+[29/11/2020 21:05] INFO: Lancement du bot
+[29/11/2020 21:05] ERROR: 
+Failed to load extension sdlm
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\testbot\plugins\sdlm.py", line 199, in setup
+    bot.add_cog(Sdlm(bot))
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 508, in add_cog
+    cog = cog._inject(self)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 389, in _inject
+    raise e
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\cog.py", line 384, in _inject
+    bot.add_command(command)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\core.py", line 1131, in add_command
+    raise CommandRegistrationError(command.name)
+discord.ext.commands.errors.CommandRegistrationError: The command areload is already an existing command or alias.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/testbot/main.py", line 79, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: CommandRegistrationError: The command areload is already an existing command or alias.
+[29/11/2020 21:07] INFO: Lancement du bot
+[29/11/2020 21:21] INFO: Lancement du bot
+[29/11/2020 21:21] INFO: Lancement du bot
+[29/11/2020 21:22] INFO: Lancement du bot
+[29/11/2020 21:22] INFO: Lancement du bot
+[29/11/2020 21:24] INFO: Lancement du bot
+[29/11/2020 21:25] INFO: Lancement du bot
+[30/11/2020 12:53] INFO: Lancement du bot
+[30/11/2020 12:55] INFO: Lancement du bot
+[30/11/2020 20:49] INFO: Lancement du bot
+[30/11/2020 20:50] INFO: Lancement du bot
+[01/12/2020 12:41] INFO: Lancement du bot
+[01/12/2020 18:07] INFO: Lancement du bot
+[01/12/2020 18:12] INFO: Lancement du bot
+[01/12/2020 18:14] INFO: Lancement du bot
+[01/12/2020 18:31] INFO: Lancement du bot
+[01/12/2020 18:34] INFO: Lancement du bot
+[01/12/2020 19:03] INFO: Lancement du bot
+[01/12/2020 19:03] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\BOT--CH- V2\plugins\general.py", line 7, in <module>
+    import package
+  File "D:\BOT--CH- V2\package.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: ModuleNotFoundError: No module named 'requests'
+[01/12/2020 19:03] INFO: Lancement du bot
+[01/12/2020 19:03] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\BOT--CH- V2\plugins\general.py", line 7, in <module>
+    import package
+  File "D:\BOT--CH- V2\package.py", line 1, in <module>
+    import requests
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\requests\__init__.py", line 43, in <module>
+    import urllib3
+ModuleNotFoundError: No module named 'urllib3'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: ModuleNotFoundError: No module named 'urllib3'
+[01/12/2020 19:03] INFO: Lancement du bot
+[01/12/2020 19:03] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\BOT--CH- V2\plugins\general.py", line 7, in <module>
+    import package
+  File "D:\BOT--CH- V2\package.py", line 1, in <module>
+    import requests
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\requests\__init__.py", line 120, in <module>
+    from . import utils
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\requests\utils.py", line 25, in <module>
+    from . import certs
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\requests\certs.py", line 15, in <module>
+    from certifi import where
+ModuleNotFoundError: No module named 'certifi'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: ModuleNotFoundError: No module named 'certifi'
+[01/12/2020 19:04] INFO: Lancement du bot
+[01/12/2020 19:04] INFO: Lancement du bot
+[01/12/2020 19:15] INFO: Lancement du bot
+[01/12/2020 19:16] INFO: Lancement du bot
+[01/12/2020 19:16] INFO: Lancement du bot
+[01/12/2020 19:18] INFO: Lancement du bot
+[01/12/2020 19:27] INFO: Lancement du bot
+[01/12/2020 19:30] INFO: Lancement du bot
+[01/12/2020 19:36] INFO: Lancement du bot
+[01/12/2020 19:39] INFO: Lancement du bot
+[01/12/2020 19:51] INFO: Lancement du bot
+[01/12/2020 20:28] INFO: Lancement du bot
+[01/12/2020 20:32] INFO: Lancement du bot
+[01/12/2020 20:32] INFO: Lancement du bot
+[01/12/2020 20:41] INFO: Lancement du bot
+[01/12/2020 20:41] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\BOT--CH- V2\plugins\general.py", line 180, in setup
+    bot.add_cog(General(bot))
+  File "D:\BOT--CH- V2\plugins\general.py", line 39, in __init__
+    self.codelines = package.count_lines_code()
+  File "D:\BOT--CH- V2\package.py", line 274, in count_lines_code
+    for filename in [f"plugins\\{x.lower()}.py" for x in self.bot.cogs]:
+NameError: name 'self' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: NameError: name 'self' is not defined
+[01/12/2020 20:42] INFO: Lancement du bot
+[01/12/2020 20:49] INFO: Lancement du bot
+[01/12/2020 20:49] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\BOT--CH- V2\plugins\general.py", line 180, in setup
+    bot.add_cog(General(bot))
+  File "D:\BOT--CH- V2\plugins\general.py", line 39, in __init__
+    self.codelines = package.count_lines_code(self.bot.cogs)
+TypeError: count_lines_code() takes 0 positional arguments but 1 was given
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\main.py", line 83, in main
+    client.load_extension("plugins."+plugin)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "D:\BOT--CH- V2\venv\Lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: TypeError: count_lines_code() takes 0 positional arguments but 1 was given
+[01/12/2020 20:49] INFO: Lancement du bot
+[02/12/2020 08:11] INFO: Lancement du bot
+[02/12/2020 20:23] INFO: Lancement du bot
+[02/12/2020 20:25] INFO: Lancement du bot
+[03/12/2020 07:47] INFO: Lancement du bot
+[04/12/2020 07:40] INFO: Lancement du bot
+[05/12/2020 19:29] INFO: Lancement du bot
+[06/12/2020 10:32] INFO: Lancement du bot
+[06/12/2020 20:55] INFO: Lancement du bot
+[07/12/2020 07:29] INFO: Lancement du bot
+[08/12/2020 07:28] INFO: Lancement du bot
+[09/12/2020 08:34] INFO: Lancement du bot
+[09/12/2020 17:25] INFO: Lancement du bot
+[09/12/2020 17:35] INFO: Lancement du bot
+[09/12/2020 17:36] INFO: Lancement du bot
+[09/12/2020 17:40] INFO: Lancement du bot
+[09/12/2020 17:43] INFO: Lancement du bot
+[09/12/2020 17:50] INFO: Lancement du bot
+[09/12/2020 17:50] INFO: Lancement du bot
+[09/12/2020 17:52] INFO: Lancement du bot
+[09/12/2020 17:53] INFO: Lancement du bot
+[09/12/2020 18:15] INFO: Lancement du bot
+[09/12/2020 18:15] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\BOT--CH- V2\plugins\general.py", line 8, in <module>
+    import request
+ModuleNotFoundError: No module named 'request'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/BOT--CH- V2/main.py", line 82, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: ModuleNotFoundError: No module named 'request'
+[09/12/2020 18:17] INFO: Lancement du bot
+[09/12/2020 18:18] INFO: Lancement du bot
+[09/12/2020 18:30] INFO: Lancement du bot
+[09/12/2020 18:32] INFO: Lancement du bot
+[09/12/2020 18:35] INFO: Lancement du bot
+[09/12/2020 18:38] INFO: Lancement du bot
+[09/12/2020 18:39] INFO: Lancement du bot
+[09/12/2020 18:40] INFO: Lancement du bot
+[09/12/2020 18:44] INFO: Lancement du bot
+[09/12/2020 18:47] INFO: Lancement du bot
+[09/12/2020 18:50] INFO: Lancement du bot
+[09/12/2020 19:01] INFO: Lancement du bot
+[09/12/2020 20:33] INFO: Lancement du bot
+[09/12/2020 20:35] INFO: Lancement du bot
+[09/12/2020 20:36] INFO: Lancement du bot
+[09/12/2020 20:37] INFO: Lancement du bot
+[09/12/2020 20:38] INFO: Lancement du bot
+[09/12/2020 20:39] INFO: Lancement du bot
+[09/12/2020 20:49] INFO: Lancement du bot
+[09/12/2020 20:50] INFO: Lancement du bot
+[09/12/2020 20:50] INFO: Lancement du bot
+[09/12/2020 20:50] INFO: Lancement du bot
+[09/12/2020 20:52] INFO: Lancement du bot
+[09/12/2020 20:53] INFO: Lancement du bot
+[09/12/2020 20:53] ERROR: 
+Failed to load extension dev
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\BOT--CH- V2\plugins\dev.py", line 59
+    @commands.command(name='data')
+    ^
+IndentationError: unexpected indent
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:/BOT--CH- V2/main.py", line 82, in main
+    client.load_extension("plugins."+plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\ext\commands\bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.dev' raised an error: IndentationError: unexpected indent (dev.py, line 59)
+[09/12/2020 20:53] INFO: Lancement du bot
+[09/12/2020 20:55] INFO: Lancement du bot
+[09/12/2020 20:56] INFO: Lancement du bot
+[09/12/2020 20:57] INFO: Lancement du bot
+[09/12/2020 20:57] INFO: Lancement du bot
+[09/12/2020 20:59] INFO: Lancement du bot
+[09/12/2020 21:03] INFO: Lancement du bot
+[10/12/2020 07:49] INFO: Lancement du bot
+[10/12/2020 17:41] INFO: Lancement du bot
+[10/12/2020 20:38] INFO: Lancement du bot
+[10/12/2020 20:39] INFO: Lancement du bot
+[10/12/2020 20:42] INFO: Lancement du bot
+[11/12/2020 07:26] INFO: Lancement du bot
+[12/12/2020 20:11] INFO: Lancement du bot
+[12/12/2020 21:36] INFO: Lancement du bot
+[12/12/2020 21:36] ERROR: 
+Failed to load extension starbotch
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\venv\lib\site-packages\discord\ext\commands\bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "D:\BOT--CH- V2\plugins\starbotch.py", line 127, in setup
+    bot.add_cog(Starbotch(bot))
+  File "D:\BOT--CH- V2\plugins\starbotch.py", line 15, in __init__
+    conf = json.load(f)
+NameError: name 'json' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BOT--CH- V2\main.py", line 82, in main
+    client.load_extension("plugins."+plugin)
+  File "D:\BOT--CH- V2\venv\lib\site-packages\discord\ext\commands\bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "D:\BOT--CH- V2\venv\lib\site-packages\discord\ext\commands\bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.starbotch' raised an error: NameError: name 'json' is not defined
+[12/12/2020 21:36] INFO: Lancement du bot
+[12/12/2020 21:36] INFO: Lancement du bot
+[13/12/2020 10:07] INFO: Lancement du bot
+[13/12/2020 10:18] INFO: Lancement du bot
+[13/12/2020 19:45] INFO: Lancement du bot
+[13/12/2020 19:45] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/general.py", line 230, in setup
+    bot.add_cog(General(bot))
+  File "/root/.local/share/botch/plugins/general.py", line 43, in __init__
+    self.codelines = package.count_lines_code()
+  File "/root/.local/share/botch/package.py", line 283, in count_lines_code
+    with open(filename, 'r', encoding="utf8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\errors.py'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\errors.py'
+[13/12/2020 19:53] INFO: Lancement du bot
+[13/12/2020 19:53] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/general.py", line 230, in setup
+    bot.add_cog(General(bot))
+  File "/root/.local/share/botch/plugins/general.py", line 43, in __init__
+    self.codelines = package.count_lines_code()
+  File "/root/.local/share/botch/package.py", line 283, in count_lines_code
+    with open(filename, 'r', encoding="utf8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\errors.py'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\errors.py'
+[14/12/2020 06:36] INFO: Lancement du bot
+[14/12/2020 06:36] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/general.py", line 230, in setup
+    bot.add_cog(General(bot))
+  File "/root/.local/share/botch/plugins/general.py", line 43, in __init__
+    self.codelines = package.count_lines_code()
+  File "/root/.local/share/botch/package.py", line 283, in count_lines_code
+    with open(filename, 'r', encoding="utf8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\errors.py'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\errors.py'
+[14/12/2020 11:48] INFO: Lancement du bot
+[14/12/2020 11:48] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/general.py", line 230, in setup
+    bot.add_cog(General(bot))
+  File "/root/.local/share/botch/plugins/general.py", line 43, in __init__
+    self.codelines = package.count_lines_code()
+  File "/root/.local/share/botch/package.py", line 283, in count_lines_code
+    with open(filename, 'r', encoding="utf8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\general.py'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\general.py'
+[14/12/2020 11:52] INFO: Lancement du bot
+[14/12/2020 11:52] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/general.py", line 230, in setup
+    bot.add_cog(General(bot))
+  File "/root/.local/share/botch/plugins/general.py", line 43, in __init__
+    self.codelines = package.count_lines_code()
+  File "/root/.local/share/botch/package.py", line 284, in count_lines_code
+    with open(filename, 'r', encoding="utf8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\general.py'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'plugins\\general.py'
+[14/12/2020 11:54] INFO: Lancement du bot
+[14/12/2020 11:54] ERROR: 
+Failed to load extension general
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/general.py", line 230, in setup
+    bot.add_cog(General(bot))
+  File "/root/.local/share/botch/plugins/general.py", line 43, in __init__
+    self.codelines = package.count_lines_code(self.bot.cogs.values())
+  File "/root/.local/share/botch/package.py", line 284, in count_lines_code
+    with open(filename, 'r', encoding="utf8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'checks.py'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.general' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'checks.py'
+[14/12/2020 11:54] INFO: Lancement du bot
+[14/12/2020 11:54] ERROR: 
+Failed to load extension starbotch
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/starbotch.py", line 181, in setup
+    bot.add_cog(Starbotch(bot))
+  File "/root/.local/share/botch/plugins/starbotch.py", line 51, in __init__
+    with open('data\\config.json') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.starbotch' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+[14/12/2020 11:55] INFO: Lancement du bot
+[14/12/2020 11:55] ERROR: 
+Failed to load extension starbotch
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/starbotch.py", line 181, in setup
+    bot.add_cog(Starbotch(bot))
+  File "/root/.local/share/botch/plugins/starbotch.py", line 51, in __init__
+    with open('data\\config.json') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.starbotch' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+[14/12/2020 11:56] INFO: Lancement du bot
+[14/12/2020 11:56] ERROR: 
+Failed to load extension starbotch
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/starbotch.py", line 181, in setup
+    bot.add_cog(Starbotch(bot))
+  File "/root/.local/share/botch/plugins/starbotch.py", line 51, in __init__
+    with open(r'data\config.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.starbotch' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+[14/12/2020 11:59] INFO: Lancement du bot
+[14/12/2020 11:59] ERROR: 
+Failed to load extension starbotch
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/starbotch.py", line 181, in setup
+    bot.add_cog(Starbotch(bot))
+  File "/root/.local/share/botch/plugins/starbotch.py", line 51, in __init__
+    with open(r'data\config.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.starbotch' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+[14/12/2020 14:36] INFO: Lancement du bot
+[14/12/2020 14:36] ERROR: 
+Failed to load extension starbotch
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/starbotch.py", line 181, in setup
+    bot.add_cog(Starbotch(bot))
+  File "/root/.local/share/botch/plugins/starbotch.py", line 51, in __init__
+    with open(r'data\config.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.starbotch' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+[14/12/2020 18:16] INFO: Lancement du bot
+[14/12/2020 18:16] ERROR: 
+Failed to load extension starbotch
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/starbotch.py", line 180, in setup
+    bot.add_cog(Starbotch(bot))
+  File "/root/.local/share/botch/plugins/starbotch.py", line 52, in __init__
+    self.protected_channels = protected_channels()
+  File "/root/.local/share/botch/package.py", line 269, in protected_channels
+    with open(r'data\config.json', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.starbotch' raised an error: FileNotFoundError: [Errno 2] No such file or directory: 'data\\config.json'
+[14/12/2020 18:21] INFO: Lancement du bot
+[14/12/2020 18:21] ERROR: 
+Failed to load extension sdlm
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/sdlm.py", line 275, in setup
+    bot.add_cog(Sdlm(bot))
+  File "/root/.local/share/botch/plugins/sdlm.py", line 68, in __init__
+    self.posteur = DBA.posteur
+  File "/root/.local/share/botch/DataBaseAccess.py", line 36, in _showposteur
+    rawdata = self.cursor.execute("SELECT data FROM users WHERE id = ?", (321,))
+sqlite3.OperationalError: no such column: data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: OperationalError: no such column: data
+[14/12/2020 18:25] INFO: Lancement du bot
+[14/12/2020 18:25] ERROR: 
+Failed to load extension sdlm
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/sdlm.py", line 275, in setup
+    bot.add_cog(Sdlm(bot))
+  File "/root/.local/share/botch/plugins/sdlm.py", line 68, in __init__
+    self.posteur = DBA.posteur
+  File "/root/.local/share/botch/DataBaseAccess.py", line 36, in _showposteur
+    rawdata = self.cursor.execute("SELECT data FROM users WHERE id = ?", (321,))
+sqlite3.OperationalError: no such column: data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: OperationalError: no such column: data
+[14/12/2020 18:28] INFO: Lancement du bot
+[14/12/2020 18:28] ERROR: 
+Failed to load extension sdlm
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/sdlm.py", line 271, in setup
+    bot.add_cog(Sdlm(bot))
+  File "/root/.local/share/botch/plugins/sdlm.py", line 64, in __init__
+    self.posteur = DBA.posteur
+  File "/root/.local/share/botch/DataBaseAccess.py", line 36, in _showposteur
+    rawdata = self.cursor.execute("SELECT data FROM users WHERE id = ?", (321,))
+sqlite3.OperationalError: no such column: data
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: OperationalError: no such column: data
+[14/12/2020 18:31] INFO: Lancement du bot
+[15/12/2020 06:34] INFO: Lancement du bot
+[15/12/2020 16:11] INFO: Lancement du bot
+[15/12/2020 16:12] INFO: Lancement du bot
+[15/12/2020 16:17] INFO: Lancement du bot
+[15/12/2020 16:18] INFO: Lancement du bot
+[15/12/2020 16:37] INFO: Lancement du bot
+[17/12/2020 17:55] INFO: Lancement du bot
+[17/12/2020 18:02] INFO: Lancement du bot
+[17/12/2020 18:03] INFO: Lancement du bot
+[17/12/2020 18:24] INFO: Lancement du bot
+[17/12/2020 18:24] ERROR: 
+Failed to load extension starbotch
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 607, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/root/.local/share/botch/plugins/starbotch.py", line 86
+    self.starbotch = await sbload(bot, self.starbotch_channel)
+                     ^
+SyntaxError: 'await' outside async function
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 86, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 610, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.starbotch' raised an error: SyntaxError: 'await' outside async function (starbotch.py, line 86)
+[17/12/2020 18:26] INFO: Lancement du bot
+[17/12/2020 18:31] INFO: Lancement du bot
+[17/12/2020 18:50] INFO: Lancement du bot
+[17/12/2020 18:52] INFO: Lancement du bot
+[17/12/2020 18:53] INFO: Lancement du bot
+[17/12/2020 18:53] INFO: Lancement du bot
+[17/12/2020 18:57] INFO: Lancement du bot
+[17/12/2020 19:02] INFO: Lancement du bot
+[17/12/2020 19:14] INFO: Lancement du bot
+[20/12/2020 09:32] INFO: Lancement du bot
+[20/12/2020 09:33] INFO: Lancement du bot
+[20/12/2020 09:36] INFO: Lancement du bot
+[20/12/2020 09:36] INFO: Lancement du bot
+[20/12/2020 09:37] INFO: Lancement du bot
+[20/12/2020 09:41] INFO: Lancement du bot
+[20/12/2020 09:41] INFO: Lancement du bot
+[20/12/2020 09:44] INFO: Lancement du bot
+[20/12/2020 10:39] INFO: Lancement du bot
+[20/12/2020 10:40] INFO: Lancement du bot
+[20/12/2020 19:25] INFO: Lancement du bot
+[20/12/2020 19:26] INFO: Lancement du bot
+[20/12/2020 19:28] INFO: Lancement du bot
+[21/12/2020 12:30] INFO: Lancement du bot
+[21/12/2020 12:32] INFO: Lancement du bot
+[22/12/2020 18:53] INFO: Lancement du bot
+[22/12/2020 18:54] INFO: Lancement du bot
+[22/12/2020 18:56] INFO: Lancement du bot
+[22/12/2020 18:56] INFO: Lancement du bot
+[22/12/2020 18:57] INFO: Lancement du bot
+[22/12/2020 18:58] INFO: Lancement du bot
+[23/12/2020 17:58] INFO: Lancement du bot
+[23/12/2020 17:59] INFO: Lancement du bot
+[24/12/2020 20:55] INFO: Lancement du bot
+[24/12/2020 20:57] INFO: Lancement du bot
+[24/12/2020 20:58] INFO: Lancement du bot
+[24/12/2020 20:59] INFO: Lancement du bot
+[24/12/2020 21:05] INFO: Lancement du bot
+[24/12/2020 21:07] INFO: Lancement du bot
+[24/12/2020 21:08] INFO: Lancement du bot
+[24/12/2020 21:08] INFO: Lancement du bot
+[24/12/2020 21:08] INFO: Lancement du bot
+[24/12/2020 21:31] INFO: Lancement du bot
+[27/12/2020 14:05] INFO: Lancement du bot
+[27/12/2020 14:07] INFO: Lancement du bot
+[06/01/2021 17:40] INFO: Lancement du bot
+[06/01/2021 17:45] INFO: Lancement du bot
+[06/01/2021 17:47] INFO: Lancement du bot
+[06/01/2021 18:08] INFO: Lancement du bot
+[06/01/2021 18:08] ERROR: 
+Failed to load extension sdlm
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/sdlm.py", line 294, in setup
+    bot.add_cog(Sdlm(bot))
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 508, in add_cog
+    cog = cog._inject(self)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/cog.py", line 395, in _inject
+    raise e
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/cog.py", line 390, in _inject
+    bot.add_command(command)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 1138, in add_command
+    raise CommandRegistrationError(command.name)
+discord.ext.commands.errors.CommandRegistrationError: The command backup is already an existing command or alias.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: CommandRegistrationError: The command backup is already an existing command or alias.
+[06/01/2021 18:09] INFO: Lancement du bot
+[07/01/2021 17:54] INFO: Lancement du bot
+[10/01/2021 17:46] INFO: Lancement du bot
+[10/01/2021 18:15] INFO: Lancement du bot
+[10/01/2021 18:15] INFO: Lancement du bot
+[10/01/2021 18:17] INFO: Lancement du bot
+[10/01/2021 18:18] INFO: Lancement du bot
+[10/01/2021 18:18] ERROR: 
+Failed to load extension loops
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/loops.py", line 32, in setup
+    bot.add_cog(Loops(bot))
+  File "/root/.local/share/botch/plugins/loops.py", line 20, in __init__
+    print(f)
+UnboundLocalError: local variable 'f' referenced before assignment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.loops' raised an error: UnboundLocalError: local variable 'f' referenced before assignment
+[10/01/2021 18:18] INFO: Lancement du bot
+[10/01/2021 18:18] ERROR: 
+Failed to load extension loops
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/loops.py", line 32, in setup
+    bot.add_cog(Loops(bot))
+  File "/root/.local/share/botch/plugins/loops.py", line 20, in __init__
+    print(file_list)
+UnboundLocalError: local variable 'file_list' referenced before assignment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.loops' raised an error: UnboundLocalError: local variable 'file_list' referenced before assignment
+[10/01/2021 18:19] INFO: Lancement du bot
+[10/01/2021 18:19] ERROR: 
+Failed to load extension loops
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/loops.py", line 32, in setup
+    bot.add_cog(Loops(bot))
+  File "/root/.local/share/botch/plugins/loops.py", line 20, in __init__
+    print(file_list)
+UnboundLocalError: local variable 'file_list' referenced before assignment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.loops' raised an error: UnboundLocalError: local variable 'file_list' referenced before assignment
+[10/01/2021 18:19] INFO: Lancement du bot
+[10/01/2021 18:20] INFO: Lancement du bot
+[10/01/2021 18:20] INFO: Lancement du bot
+[10/01/2021 18:25] INFO: Lancement du bot
+[10/01/2021 18:26] INFO: Lancement du bot
+[10/01/2021 18:28] INFO: Lancement du bot
+[10/01/2021 18:29] INFO: Lancement du bot
+[10/01/2021 18:29] INFO: Lancement du bot
+[10/01/2021 18:30] INFO: Lancement du bot
+[12/01/2021 19:53] INFO: Lancement du bot
+[12/01/2021 19:56] INFO: Lancement du bot
+[12/01/2021 19:58] INFO: Lancement du bot
+[12/01/2021 19:58] INFO: Lancement du bot
+[12/01/2021 19:58] ERROR: 
+Failed to load extension loops
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 619, in _load_from_module_spec
+    setup(self)
+  File "/root/.local/share/botch/plugins/loops.py", line 48, in setup
+    bot.add_cog(Loops(bot))
+  File "/root/.local/share/botch/plugins/loops.py", line 23, in __init__
+    self.file_code = int(file_list[0][1:-1])+1
+ValueError: invalid literal for int() with base 10: '5] 2021-01-12 19h53.d'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.local/share/botch/main.py", line 83, in main
+    client.load_extension("plugins." + plugin)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 664, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "/usr/local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 624, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.loops' raised an error: ValueError: invalid literal for int() with base 10: '5] 2021-01-12 19h53.d'
+[12/01/2021 19:59] INFO: Lancement du bot
+[13/01/2021 17:22] INFO: Lancement du bot
+[17/01/2021 11:41] INFO: Lancement du bot
+[17/01/2021 12:27] INFO: Lancement du bot
+[19/01/2021 18:41] INFO: Lancement du bot
+[24/01/2021 11:50] INFO: Lancement du bot
+[06/03/2021 20:44] INFO: Lancement du bot
+[06/03/2021 20:47] INFO: Lancement du bot
+[06/03/2021 20:58] INFO: Lancement du bot
+[07/03/2021 11:24] INFO: Lancement du bot
+[10/03/2021 17:50] INFO: Lancement du bot
+[30/03/2021 17:00] INFO: Lancement du bot
+[30/03/2021 17:06] INFO: Lancement du bot
+[30/03/2021 17:08] INFO: Lancement du bot
+[30/03/2021 17:09] INFO: Lancement du bot
+[30/03/2021 17:15] INFO: Lancement du bot
+[31/03/2021 15:59] INFO: Lancement du bot
+[26/04/2021 19:09] INFO: Lancement du bot
+[26/04/2021 19:10] INFO: Lancement du bot
+[26/04/2021 19:11] INFO: Lancement du bot
+[26/04/2021 19:11] INFO: Lancement du bot
+[26/04/2021 19:14] INFO: Lancement du bot
+[26/04/2021 19:19] INFO: Lancement du bot
+[26/04/2021 19:25] INFO: Lancement du bot
+[26/04/2021 19:26] INFO: Lancement du bot
+[26/04/2021 19:27] INFO: Lancement du bot
+[11/05/2021 15:26] INFO: Lancement du bot
+[11/05/2021 15:38] INFO: Lancement du bot
+[11/05/2021 15:52] INFO: Lancement du bot
+[11/05/2021 15:53] INFO: Lancement du bot
+[11/05/2021 15:53] INFO: Lancement du bot
+[11/05/2021 15:54] INFO: Lancement du bot
+[11/05/2021 15:54] INFO: Lancement du bot
+[27/05/2021 09:16] INFO: Lancement du bot
+[13/07/2021 21:52] INFO: Lancement du bot
+[13/07/2021 21:53] INFO: Lancement du bot
+[13/07/2021 21:56] INFO: Lancement du bot
+[13/07/2021 22:02] INFO: Lancement du bot
+[13/07/2021 22:04] INFO: Lancement du bot
+[13/07/2021 22:05] INFO: Lancement du bot
+[13/07/2021 22:30] INFO: Lancement du bot
+[14/07/2021 22:03] INFO: Lancement du bot
+[14/07/2021 23:30] INFO: Lancement du bot
+[14/07/2021 23:30] ERROR: 
+Failed to load extension sdlm
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\site-packages\discord\ext\commands\bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\botch\plugins\sdlm.py", line 84
+    @commands.Cog.listener()
+    ^
+IndentationError: expected an indented block
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\botch\main.py", line 84, in main
+    client.load_extension("plugins." + plugin)
+  File "C:\Program Files\Python39\lib\site-packages\discord\ext\commands\bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Program Files\Python39\lib\site-packages\discord\ext\commands\bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: IndentationError: expected an indented block (sdlm.py, line 84)
+[14/07/2021 23:30] INFO: Lancement du bot
+[25/07/2021 20:29] INFO: Lancement du bot
