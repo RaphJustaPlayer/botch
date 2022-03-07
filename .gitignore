@@ -4,3 +4,5 @@ config.json
 venv/
 .idea/vcs.xml
 .idea/workspace.xml
+
+.idea/
