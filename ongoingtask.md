@@ -17,4 +17,4 @@ Un bot du professionnel bénévol Raph pour la voix off et le Saint et Glorieux 
   - [x] taper `cancel` annule l'envoit
   
 ###Bugfix:
-Some days without bugs !
+This is fine
