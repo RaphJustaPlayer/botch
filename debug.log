@@ -1431,3 +1431,27 @@ Traceback (most recent call last):
 discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: IndentationError: expected an indented block (sdlm.py, line 84)
 [14/07/2021 23:30] INFO: Lancement du bot
 [25/07/2021 20:29] INFO: Lancement du bot
+[03/03/2022 09:42] INFO: Lancement du bot
+[03/03/2022 09:42] ERROR: 
+Failed to load extension sdlm
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\ext\commands\bot.py", line 606, in _load_from_module_spec
+    spec.loader.exec_module(lib)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\botch\plugins\sdlm.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\botch\main.py", line 84, in main
+    client.load_extension("plugins." + plugin)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\ext\commands\bot.py", line 678, in load_extension
+    self._load_from_module_spec(spec, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python39\lib\site-packages\discord\ext\commands\bot.py", line 609, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'plugins.sdlm' raised an error: ModuleNotFoundError: No module named 'matplotlib'
+[03/03/2022 09:43] INFO: Lancement du bot
+[03/03/2022 09:45] INFO: Lancement du bot

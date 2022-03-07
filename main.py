@@ -12,7 +12,7 @@ try:
     import sqlite3
     from DataBaseAccess import DataBaseAccess
 
-    _plugins = ['general', 'dev', 'admin', 'starbotch', 'sdlm', 'loops', "vocal"]
+    _plugins = ['general', 'dev', 'admin', 'starbotch', 'sdlm', 'loops', "vocal", "memes"]
 
 
     class BOTCH(commands.bot.BotBase, discord.Client):

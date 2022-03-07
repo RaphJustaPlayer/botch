@@ -4129,3 +4129,5 @@ venv/Lib/site-packages/aiofiles-0.5.0.dist-info/RECORD
 venv/Lib/site-packages/aiofiles-0.5.0.dist-info/METADATA
 venv/Lib/site-packages/aiofiles-0.5.0.dist-info/LICENSE
 venv/Lib/site-packages/aiofiles-0.5.0.dist-info/INSTALLER
+
+.idea/

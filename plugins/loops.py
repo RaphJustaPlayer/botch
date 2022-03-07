@@ -1,9 +1,11 @@
 from discord.ext import tasks, commands
+import discord
 import datetime
 import os
 from shutil import copyfile
 import package
 import collections
+from random import choice
 
 
 class Loops(commands.Cog):
@@ -14,7 +16,7 @@ class Loops(commands.Cog):
 
         self.file_code = Loops.curent_file_number()+1
         self.looped_backup.start()
-    
+
     @staticmethod
     def do_backup(code):
         path = os.getcwd()
@@ -46,6 +48,16 @@ class Loops(commands.Cog):
     async def looped_backup(self):
         Loops.do_backup(self.file_code)
         self.file_code += 1
+
+    @tasks.loop(minutes=10)
+    async def t_moche_lyolia(self):
+        botch = await self.bot.fetch_guild(625330528588922882)
+        tmoche = discord.utils.get(botch.roles, id=949262343236366356)
+        colors = [discord.Color.dark_magenta(),
+                  discord.Color.dark_gold(),
+                  discord.Color.blurple(),
+                  discord.Color.dark_purple()]
+        await tmoche.edit(colour=choice(colors))
 
     @commands.group(name='loops')
     async def _loops_group(self, ctx):

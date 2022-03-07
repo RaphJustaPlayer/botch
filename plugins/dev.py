@@ -112,6 +112,10 @@ class Dev(commands.Cog):
         text += json.dumps(self.bot.DBA.showall(), indent=2) + '```'
         await ctx.send(text)
 
+    @commands.command(name='test')
+    async def test(self, ctx):
+        pass
+
 
 def setup(bot):
     bot.add_cog(Dev(bot))

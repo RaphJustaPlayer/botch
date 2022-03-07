@@ -142,8 +142,8 @@ class General(commands.Cog):
         final += '```'
         await ctx.send(final)
 
-    @commands.command(pass_context=True)
-    async def sinfo(self, ctx):
+    @commands.command(pass_context=True, name='info')
+    async def info(self, ctx):
         if self.bot.user.id != 762723841498677258:
             for emoji in self.bot.emojis:
                 if emoji.id == 777146313846292481:
@@ -157,7 +157,6 @@ class General(commands.Cog):
         embed = discord.Embed(
             title=ctx.guild.name,
             url="https://discord.gg/G38Ge7y",
-            description=ctx.guild.description,
             color=discord.Colour.from_rgb(255, 0, 21)
         )
         embed.set_thumbnail(url=ctx.guild.icon_url)
@@ -169,10 +168,25 @@ class General(commands.Cog):
         embed.add_field(name='Une communauté de :',
                         value=f"{str(ctx.guild.member_count)} membres avec un total de\n{len(ctx.guild.roles)} roles !",
                         inline=True)
-        raph = await ctx.guild.fetch_member(354188969472163840)
         embed.add_field(name="Un bot de :",
-                        value=f'{self.codelines} lignes de code en provenance de notre développeur professionnel bénévol {raph.mention}',
+                        value=f'{self.codelines} lignes de code en provenance de notre développeur professionnel bénévol <@!354188969472163840>',
                         inline=False)
+
+        id_list = []
+        score_dict = {}
+        sb = self.bot.DBA.showallsb()
+        for n, name in enumerate(sb):
+            id_list.append(name)
+            score_dict[n] = sb[name][1]
+
+        sorted_keys = sorted(score_dict.items(), key=lambda x: x[1], reverse=True)
+        score_dict = []
+        for i in sorted_keys:
+            temp = i[0], i[1]
+            score_dict.append(temp)
+        embed.add_field(name="Avec un starbotch d'enfer :",
+                        value=f"{len(id_list)} messages ÉNORMES dont [LE meilleurs de tous]({sb[id_list[score_dict[0][0]]][0]}) avec {str(score_dict[0][1])}⭐ !")
+
         embed.add_field(name='Et tout ceci protégé par :',
                         value=f"La puissance psychique de la voix off et la force spirituelle du Saint et Glorieux {boris} depuis le {ctx.guild.created_at.day} {package.bettermonths(ctx.guild.created_at.month)} de l'an {ctx.guild.created_at.year}",
                         inline=False)
@@ -203,7 +217,7 @@ class General(commands.Cog):
                             value="Test les latences du BOT(CH) et de l'API de discord", inline=False)
             embed.add_field(name="`?citafion`",
                             value="Exprime le savoir absolue des plus grands penseurs du genre humain", inline=False)
-            embed.add_field(name='`?sinfo`',
+            embed.add_field(name='`?info`',
                             value='Affiche les stats du serveur', inline=False)
             embed.add_field(name='`?botch`',
                             value='Expose la suprématie de BOTCH sur le youtube game', inline=False)
@@ -215,35 +229,7 @@ class General(commands.Cog):
     @commands.command(name='botch')
     async def botch(self, ctx):
         await ctx.message.delete()
-        r = requests.get("https://www.youtube.com/channel/UCZpJLCV3gVP8R_sc8P30VpQ")
-        soup = BeautifulSoup(r.text, 'lxml')
-        print(soup.prettify())
-        for raw in soup.find_all('class'):
-            raw = str(raw)
-            print(raw)
-            if 'subscriberCountText' in raw or 'channelMetadataRenderer' in raw:
-                raw = raw.split('var ytInitialData = ')
-                raw = raw[1].replace(';</script>', '')
-                raw = json.loads(raw)
-                print(json.dumps(raw, indent=2))
-
-                content = YtbRequests.SearchInYtbChannel('https://www.youtube.com/user/BOTCHvideos')
-                youtube = discord.Embed(  # Définition de l'embed
-                    title=content[1],  # Définition du titre de l'embed
-                    url='https://www.youtube.com/user/BOTCHvideos/videos',
-                    colour=discord.Colour.from_rgb(255, 0, 21),
-                    description=raw['metadata']['channelMetadataRenderer']['description'].replace('*', r'\*'))
-
-                youtube.set_thumbnail(
-                    url='https://images-ext-1.discordapp.net/external/37ywkK_fY6AtHDSW64zdpxf-81XtfGymZbawgr5ln7A/%3Fsize%3D1024/https/cdn.discordapp.com/icons/625330528588922882/a_f5e4ccb80c000491a40c3e8764e270d2.gif')
-                youtube.set_image(url=raw['header']['c4TabbedHeaderRenderer']['banner']['thumbnails'][0]['url'])
-                youtube.add_field(name="Subscriber count :",
-                                  value=raw['header']['c4TabbedHeaderRenderer']['subscriberCountText']['simpleText'])
-
-                youtube.add_field(name="Last video :",
-                                  value=f"[{raw['contents']['twoColumnBrowseResultsRenderer']['tabs'][1]['tabRenderer']['content']['sectionListRenderer']['contents'][0]['itemSectionRenderer']['contents'][0]['gridRenderer']['items'][0]['gridVideoRenderer']['title']['runs'][0]['text']}](https://www.youtube.com/watch?v={raw['contents']['twoColumnBrowseResultsRenderer']['tabs'][1]['tabRenderer']['content']['sectionListRenderer']['contents'][0]['itemSectionRenderer']['contents'][0]['gridRenderer']['items'][0]['gridVideoRenderer']['videoId']})",
-                                  inline=False)
-                await ctx.send(embed=youtube)
+        await ctx.send("La commande `?botch` est actuellement complètement pt. Je la répare soon donc avant 2025")
 
     @commands.command(name='youtube')
     # Pour le moment on ne peux voir que notre chaine mais pk pas le faire avec d'autre chaine ytb dans le futur
@@ -252,8 +238,30 @@ class General(commands.Cog):
         await ctx.send(embed=package.CustomEmbeds.ytbEmbed())  # Envoit l'embed
 
     @commands.Cog.listener()
-    async def on_message(self, message):
+    async def on_message(self, message: discord.Message):
         if self.bot.test: return await self.bot.process_commands(message)
+        if "@everyone" in message.content:
+            guild = message.guild
+            member = await guild.fetch_member(message.author.id)
+            roles = member.roles
+            verif = False
+            for r in [role for role in roles]:
+                for n in r.permissions:
+                    if n[0] == 'mention_everyone' and n[1]: verif = True
+            if not verif:
+                messages_pagentil = ["Wesh t'as cru t'étais qui pour everyone comme ça ?",
+                                     "T'es un malade dans ta tête ?",
+                                     "Ty va pas bien pitiot ?!",
+                                     "Complètement fada !",
+                                     "https://tenor.com/view/t-ban-ban-bigflo-oli-bigflo-et-oli-gif-17515232",
+                                     "Yévététué !",
+                                     "Comme l'a dis Aristote : \n> oui",
+                                     "Hey, t'es pas influenceur avec 10M d'abonnées là"]
+                for _ in range(len(messages_pagentil)):
+                    message_pagentil = random.choice(messages_pagentil)
+                    messages_pagentil.remove(message_pagentil)
+                    await message.author.send(message_pagentil)
+
         msg = message.clean_content.split(":")
         counter = 0
         for r in msg:
@@ -267,7 +275,7 @@ class General(commands.Cog):
                 counter_message = await boris_temple.fetch_message(813812044356255796)
                 embed = counter_message.embeds[0]
                 desclist = embed.description.split('`')
-                counter = int(desclist[1])+counter
+                counter = int(desclist[1]) + counter
 
                 embed = discord.Embed(
                     title="The boris counter",
@@ -285,27 +293,6 @@ class General(commands.Cog):
                         f"{counter} émojis de type <:boris:777146313846292481> ont été utilisés !\n***__FÉLICITATION !!!__***")
             except:
                 pass
-        if "@everyone" in message.content:
-            guild = self.bot.fetch_guild(625330528588922882)
-            member = guild.fetch_member(message.author.id)
-            roles = member.roles
-            verif = False
-            for r in [role for role in roles]:
-                for n in r.permissions:
-                    if n[0] == 'mention_everyone' and n[1]: verif = True
-            if not verif:
-                message_pagentil = ["Wesh t'as cru t'étais qui pour everyone comme ça ?",
-                                    "T'es un malade dans t'a tête ?",
-                                    "Ty va pas bien pitiot ?!",
-                                    "Complètement fada !",
-                                    "https://tenor.com/view/t-ban-ban-bigflo-oli-bigflo-et-oli-gif-17515232",
-                                    "Yé vé té tué !",
-                                    "Comme l'a dis Aristote : \n> oui",
-                                    "Hey, t'es pas influenceur avec 10M d'abonnées là"]
-                for _ in range(len(message_pagentil)):
-                    msg = random.choice(message_pagentil)
-                    message_pagentil.remove(msg)
-                    await message.author.send(msg)
 
     @commands.command(name="suntzu")
     async def suntzu(self, ctx):
