@@ -221,6 +221,8 @@ class General(commands.Cog):
                             value='Affiche les stats du serveur', inline=False)
             embed.add_field(name='`?botch`',
                             value='Expose la suprématie de BOTCH sur le youtube game', inline=False)
+            embed.add_field(name="`?sb` ou `?starbotch`",
+                            value="Affiche un message d'aide sur les commandes du starbotch")
         else:
             raise commands.errors.BadArgument(param)
 

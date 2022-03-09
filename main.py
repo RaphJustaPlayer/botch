@@ -12,7 +12,7 @@ try:
     import sqlite3
     from DataBaseAccess import DataBaseAccess
 
-    _plugins = ['general', 'dev', 'admin', 'starbotch', 'sdlm', 'loops', "vocal", "memes"]
+    _plugins = ['general', 'dev', 'admin', 'starbotch', 'sdlm', 'loops', "vocal", "memes", 'broadcast']
 
 
     class BOTCH(commands.bot.BotBase, discord.Client):
@@ -20,7 +20,7 @@ try:
             super().__init__(command_prefix='?', status=discord.Status.online,
                              activity=discord.Game("servir des bières"), intents=discord.Intents.all())
             self.test = test
-            self.DBA = DataBaseAccess(connexion=sqlite3.connect("data/database.db"))
+            self.DBA: DataBaseAccess = DataBaseAccess(connexion=sqlite3.connect("data/database.db"))
             with open('config.json') as f: self.config = json.load(f)
 
 

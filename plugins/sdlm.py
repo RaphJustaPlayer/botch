@@ -174,7 +174,7 @@ class Sdlm(commands.Cog):
                     if message.type == discord.MessageType.pins_add:
                         return await message.delete()
 
-    @commands.command(name='leaderboard')
+    @commands.command(name='leaderboard', aliases=["lb"])
     async def lb(self, ctx):
         if self.topgraph_url == 0: await self.update_top_graph()
         await ctx.message.delete()
@@ -451,14 +451,23 @@ class Sdlm(commands.Cog):
         except:
             posteur = ctx.message.mentions[0]
 
+        init_score = self.bot.DBA.showscore(posteur.id)
+
+        if param == "-1":
+            new_score = init_score - 1
+        elif param == '+1':
+            new_score = init_score + 1
+        else:
+            new_score = int(param)
+
         embed = discord.Embed(
             title="Modification du score !",
-            description=f"Le score de {posteur.mention} passe de **{str(self.bot.DBA.showscore(posteur.id))}** à **{param}**",
+            description=f"Le score de {posteur.mention} passe de **{str(init_score)}** à **{str(new_score)}**",
             color=discord.Colour.from_rgb(255, 0, 21)
         )
         embed.set_thumbnail(url=posteur.avatar_url_as(static_format='png'))
 
-        self.bot.DBA.updatescore(posteur.id, int(param))
+        self.bot.DBA.updatescore(posteur.id, new_score)
         await ctx.send(embed=embed)
         self.leaderboard = await leaderboard_maker(ctx.guild, self.bot.DBA.leaderboard())
 

@@ -44,30 +44,6 @@ class Admin(commands.Cog):
         self.bot = bot
         self.file = "admin"
         self.report_channel = {True: 752932896683196536, False: 750634015886803025}
-        self.broadcastconfirm = {}  # Sous la forme int(user_id): ('sdlm', message)
-
-    @commands.Cog.listener()
-    async def on_message(self, message):
-        """
-        Ce on_message est uniquement utilisé pour gérer le broadcast administrateur.
-        Il faudrait déplacer toute la sectio de braodcast dans un cogs à part entière plus tard.
-        """
-        if self.bot.test: return await self.bot.process_commands(message)  # Check si le bot est sous token test
-        if message.content == 'confirm':  # Le confirm est utilisé pour le système de broadcast
-
-            if message.author.id in self.broadcastconfirm and self.broadcastconfirm[message.author.id][0] == 'sdlm':
-                # Vérifie si la personne qui envoit le confirm est bien celui qui a envoyer le broadcast et si le message est bien enregistré.
-                for user_id in self.bot.DBA.showall():  # Récupère l'id de toute les personnes du leaderboard
-                    try:
-                        user = await self.bot.fetch_user(int(user_id))  # Fetch chaque personne du leaderboard
-                        await user.send(self.broadcastconfirm[message.author.id][1])  # Envoit le message de broadcast
-                    except: pass  # Juste au cas où le membre a bloquer ses mp
-                self.broadcastconfirm.pop(message.author.id, None)  # Retire le message du dict
-
-        elif message.content == 'cancel' and message.author.id in self.broadcastconfirm:
-            # Si le broadcaster cancel son message
-            self.broadcastconfirm.pop(message.author.id, None)  # Retire le message du dict
-            await message.channel.send("Message annulé")  # Feedback
 
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload):
@@ -175,40 +151,6 @@ class Admin(commands.Cog):
             await ctx.send(msg)
             await msg.delete()
     # END OF ADMIN CORE GROUP
-
-    # START OF BROADCAST GROUP
-    @commands.group()
-    async def broadcast(self, ctx):
-        package.is_admin(ctx.author.roles)
-        if ctx.invoked_subcommand is None:
-            embed = discord.Embed(
-                title="Help broadcast",
-                color=discord.Colour.from_rgb(255, 0, 21)
-            )
-            embed.add_field(name="`?broadcast sdlm <message>`",
-                            value="Envoit un message à tout les participants présents dans la db du <#707639957484732466>", inline=False)
-            embed.add_field(name="`?broadcast annonce <message>`",
-                            value="Envoit un message dans le <#625338153640656907>", inline=False)
-            await ctx.send(embed=embed)
-
-    @broadcast.command(name='annonce')
-    async def _annonce(self, ctx):
-        if ctx.author.id != 354188969472163840:
-            return
-        embed = discord.Embed(
-            title='***BOTCH NEWS !***',
-            description='C drole putain',
-            color=discord.Colour.from_rgb(255, 0, 21)
-        )
-        await ctx.send(embed=embed)
-
-    @broadcast.command(name='sdlm')
-    async def _bsdlm(self, ctx, *, message):
-        await ctx.send('Le message que vous vous apretez a envoyé est :'
-                       f'\n```{message}```'
-                       '\n\nTapez `confirm` pour envoyer le message.')
-        self.broadcastconfirm[ctx.author.id] = ('sdlm', message)
-    # END OF BROADCAST GROUP
 
     # START OF CHANNELS MANAGEMENT GROUP
     @commands.group(name='channel')

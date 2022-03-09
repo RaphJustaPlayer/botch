@@ -2,9 +2,9 @@
 Un bot du professionnel bénévol Raph pour la voix off et le Saint et Glorieux Boris
 
 ###Commands:
-- [ ] `?sb` ...
-  - [ ] ...`leaderboard`$0
-  - [ ] ...`random`$0
+- [x] `?sb` ...
+  - [x] ...`leaderboard`$100
+  - [x] ...`random`$100
   - [x] adaptation de la db$100
   - [x] pré-load du leaderboard$100
   
@@ -12,7 +12,7 @@ Un bot du professionnel bénévol Raph pour la voix off et le Saint et Glorieux 
   - [x] ...`annonce`$100
     - Ne marche que en interne, il faut écrire l'embed depuis le code
     - [ ] **OPTIONNEL** Faire un éditeur d'embed ou pouvoir en faire un depuis un json$0
-  - [x] ...`sdlm`$0
+  - [x] ...`sdlm`$100
   - Faire un `... bot(ch)` pour les news du bot ?
   - [x] taper `cancel` annule l'envoit
   

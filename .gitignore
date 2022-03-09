@@ -6,3 +6,5 @@ venv/
 .idea/workspace.xml
 
 .idea/
+YTB_request.py
+data/database.db

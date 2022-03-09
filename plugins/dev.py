@@ -114,7 +114,8 @@ class Dev(commands.Cog):
 
     @commands.command(name='test')
     async def test(self, ctx):
-        pass
+        if ctx.author.id != 354188969472163840:
+            return
 
 
 def setup(bot):
