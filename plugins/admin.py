@@ -4,6 +4,7 @@ from discord.utils import get
 import package
 import os
 import json
+import main
 
 
 def report_embed(message):  # Génère l'embed de report
@@ -40,7 +41,7 @@ class Admin(commands.Cog):
 
     Grosse flemme de faire le reste, y'aura des comms sur chaque commande
     """
-    def __init__(self, bot):
+    def __init__(self, bot: main.BOTCH):
         self.bot = bot
         self.file = "admin"
         self.report_channel = {True: 752932896683196536, False: 750634015886803025}
@@ -150,6 +151,41 @@ class Admin(commands.Cog):
         async for msg in cible.history(limit=nbrmessages):
             await ctx.send(msg)
             await msg.delete()
+
+    @_admin_core.command(name="roles")
+    async def _show_roles(self, ctx):
+        guild: discord.Guild = None
+        for g in self.bot.guilds:
+            g: discord.Guild
+            if g.id == 625330528588922882:
+                guild = g
+        roles = guild.roles
+
+        track = 0
+        embed = discord.Embed(
+            title="Roles status",
+            color=discord.Colour.from_rgb(255, 0, 21)
+        )
+        roleignore = [723202731803672736, 723202665789653102, 636591147589828638, 723196934197608468,
+                      754385790682923039, 723521427793510402, 732939404460425236, 735432443930345514, 777247006954750023,
+                      717354351705849906, 775767740312977440, 704813192282374174, 636512191046221827, 949262343236366356,
+                      720708059525283854, 636557010724454413]
+        for role in roles:
+            role: discord.Role
+            if track == 12:
+                await ctx.send(embed=embed)
+                embed = discord.Embed(
+                    title="Roles status",
+                    color=discord.Colour.from_rgb(255, 0, 21)
+                )
+                track = 0
+            elif role.id in roleignore:
+                pass
+            else:
+                embed.add_field(name=f"{role.name if role.id != 625330528588922882 else 'Membres au total'}", value=f"{len(role.members)} personnes ayant ce role")
+                track += 1
+
+        if track != 0: await ctx.send(embed=embed)
     # END OF ADMIN CORE GROUP
 
     # START OF CHANNELS MANAGEMENT GROUP
