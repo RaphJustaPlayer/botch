@@ -2,19 +2,10 @@
 Un bot du professionnel bénévol Raph pour la voix off et le Saint et Glorieux Boris
 
 ###Commands:
-- [x] `?sb` ...
-  - [x] ...`leaderboard`$100
-  - [x] ...`random`$100
-  - [x] adaptation de la db$100
-  - [x] pré-load du leaderboard$100
-  
-- [ ] `?broadcast` ...
-  - [x] ...`annonce`$100
-    - Ne marche que en interne, il faut écrire l'embed depuis le code
-    - [ ] **OPTIONNEL** Faire un éditeur d'embed ou pouvoir en faire un depuis un json$0
-  - [x] ...`sdlm`$100
-  - Faire un `... bot(ch)` pour les news du bot ?
-  - [x] taper `cancel` annule l'envoit
+- [ ] `?rolereact`
+  - [ ] Créer une zone dans le config.json$0
+  - [ ] Commande facile pour manager le message de rolereact$0
+  - [ ] Commande facile pour manager les émojis/roles du message$0
   
 ###Bugfix:
 This is fine
